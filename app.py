@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads/'
 
 # Load model
-model = load_model('model/tumor_model.h5')
+model = load_model('model/99accBTIModeltobigdata.keras')
 
 def predict_tumor(file_path):
     img = load_img(file_path, target_size=(150, 150))  # Sesuaikan dengan ukuran input model Anda
